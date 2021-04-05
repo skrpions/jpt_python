@@ -3,7 +3,7 @@ import pandas as pd
 from tkinter import *
 import sqlite3
 import matplotlib.pyplot as plot
-
+import openpyxl
 
 plot.rcdefaults()
 

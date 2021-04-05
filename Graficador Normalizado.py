@@ -77,6 +77,7 @@ def get_registry():
     for i in normal_value_list:
         final_value_list.insert(index, i[0])
 
+    print(final_value_list)
     # Genera la grafica de barras
     fig, axs = plot.subplots()
     axs.bar(name_list, final_value_list)

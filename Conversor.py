@@ -5,10 +5,12 @@ import sqlite3
 import matplotlib.pyplot as plot
 import openpyxl
 
+# Restaureo los parámetros rc del estilo predeterminado interno de Matplotlib.
 plot.rcdefaults()
 
 root = Tk()
 root.withdraw()
+
 
 class MyFrame(Frame):
 
@@ -33,6 +35,8 @@ class MyFrame(Frame):
 
             # Connexion a la Database
             conexion = sqlite3.connect(filename)
+
+            # Creamos un cursor para ejecutar acciones como consultas, inserciones, actualizaciones
             cursor = conexion.cursor()
             print("Conectado! \n")
 
@@ -55,7 +59,7 @@ class MyFrame(Frame):
             cursor.close()
 
         except:
-            print("\n No se pudieron leer los datos de la tabla:- "+table_name)
+            print("\n No se pudieron leer los datos de la tabla:- " + table_name)
 
         finally:
             if conexion:
@@ -63,5 +67,6 @@ class MyFrame(Frame):
                 print("\n La conexión SQLite se acaba de cerrar")
 
 
+# Ejecuta las funciones
 if __name__ == "__main__":
     MyFrame().mainloop()

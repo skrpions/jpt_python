@@ -10,7 +10,7 @@ Análisis :
         1) Los registros clave y valor son indeterminados en cantidad (una función genérica nos podría ayudar a solventar
            el recorrido de dichos elementos , teniendo en cuenta que existen exepciones que deben ser controladas)
         2) para crear las columnas es necesario conocer cuantas claves existen en los diccionarios y anexarlas
-        3) recorrer nuevamente todo los elementos "buscando cada coincidencia y agregadolo a su columna"
+        3) recorrer nuevamente todos los elementos "buscando cada coincidencia y agregadolo a su columna"
         así:
             col1 col2 col3
         id  ...    x  ....
